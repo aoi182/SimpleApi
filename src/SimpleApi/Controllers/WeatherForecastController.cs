@@ -23,11 +23,6 @@ namespace SimpleApi.Controllers
             _logger = logger;
         }
 
-        public WeatherForecastController()
-        {
-            
-        }
-
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {

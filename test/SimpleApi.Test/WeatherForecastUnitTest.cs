@@ -6,7 +6,7 @@ namespace SimpleApi.Test
 {
     public class WeatherForecastUnitTest
     {
-        WeatherForecastController target = new WeatherForecastController();
+        WeatherForecastController target = new WeatherForecastController(null);
         
         [Fact]
         public void CheckCount()
