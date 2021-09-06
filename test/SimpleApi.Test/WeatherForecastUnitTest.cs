@@ -13,7 +13,7 @@ namespace SimpleApi.Test
         {
             var weatherForecast = target.Get();
             Assert.NotNull(weatherForecast);
-            Assert.True(weatherForecast.Count() == 5);
+            Assert.True(weatherForecast.Count() == 6);
         }
     }
 }
