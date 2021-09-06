@@ -11,7 +11,7 @@ namespace SimpleApi.Controllers
     [Route("api/[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        public static int itemsCount = 10;
+        public static int itemsCount = 3;
 
         private static readonly string[] Summaries = new[]
         {
