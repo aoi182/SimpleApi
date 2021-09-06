@@ -12,6 +12,7 @@ namespace SimpleApi.Test
         public void CheckCount()
         {
             var weatherForecast = target.Get();
+            Assert.NotNull(weatherForecast);
             Assert.True(weatherForecast.Count() == 5);
         }
     }
