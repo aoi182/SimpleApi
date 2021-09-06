@@ -11,6 +11,8 @@ namespace SimpleApi.Controllers
     [Route("api/[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+        public static int itemsCount = 10;
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -27,7 +29,7 @@ namespace SimpleApi.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
-            return Enumerable.Range(1, 60).Select(index => new WeatherForecast
+            return Enumerable.Range(1, itemsCount).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
