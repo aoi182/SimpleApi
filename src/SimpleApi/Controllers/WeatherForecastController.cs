@@ -42,9 +42,9 @@ namespace SimpleApi.Controllers
         }
 
         [HttpGet("setting")]
-        public ActionResult<string> ReadSetting()
+        public string ReadSetting()
         {
-            return Ok(_configuration["options:param1"]);
+            return _configuration["options:param1"];
         }
     }
 }
